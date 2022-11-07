@@ -5,7 +5,7 @@ plugins {
     id 'java'
 }
 
-group 'run.halo.pangu'
+group 'run.liuzhihang.pangu'
 sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
