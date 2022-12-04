@@ -54,9 +54,9 @@ jobs:
       - name: Archive plugin-starter jar
         uses: actions/upload-artifact@v2
         with:
-          name: plugin-starter
+          name: plugin-pangu
           path: |
-            build/libs/*-plain.jar
+            build/libs/*.jar
           retention-days: 1
 
   github-release:
@@ -64,10 +64,10 @@ jobs:
     needs: build
     if: github.event_name == 'release'
     steps:
-      - name: Download plugin-starter jar
+      - name: Download plugin-pangu jar
         uses: actions/download-artifact@v2
         with:
-          name: plugin-starter
+          name: plugin-pangu
           path: build/libs
       - name: Get Name of Artifact
         id: get_artifact

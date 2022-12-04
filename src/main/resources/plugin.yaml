@@ -4,9 +4,11 @@ metadata:
   name: PluginPanGu
 spec:
   enabled: true
-  version: 1.0.0-alpha.1
+  version: 1.0.0
   requires: "*"
-  author: liuzhihang
+  author:
+    name: liuzhihang
+    website: https://github.com/liuzhihang
   logo: https://halo.run/logo
   settingName: plugin-pangu-settings
   configMapName: plugin-pangu-configMap
